@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 
 # Load the dataset
-dataset_path = os.path.join('data/yield_df.csv')
+dataset_path = os.path.join('data','yield_df.csv')
 data = pd.read_csv(dataset_path)
 
 # Preprocess the dataset
@@ -55,7 +55,7 @@ def predict_yield(country, item, pesticides, avg_temp, rainfall):
     st.info(f"Predicted Yield: {predicted_yield[0]:.2f} hg/ha")
 
 # Load and display image
-image_path = os.path.join('images/SDG2.png')
+image_path = os.path.join('images','SDG2.png')
 st.image(image_path, caption='Zero Hunger', width=64)
 
 # Create Streamlit app
